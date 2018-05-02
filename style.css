@@ -1,0 +1,173 @@
+/* Colors and Fonts */
+
+body{
+  background-color: #326273;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color:  #7d7d7d;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+h1, h2, h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  color: #3F4B83;
+  font-size: 20px;
+  font-weight: 150;
+}
+
+h2{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h3{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+p{
+  color: #ccc;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 250;
+}
+
+a{
+  color: #326273;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+/* First simple components */
+
+.container-fluid{
+  width: 90%;
+  margin: 30px auto;
+}
+.card{
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.img-circle{
+  border-radius: 50%;
+}
+.text-center{
+  text-align: center;
+}
+.list-inline {
+  padding-left: 0;
+}
+.list-inline li {
+  display: inline-block;
+  padding: 20px;
+}
+.list-inline li i{
+  font-size: 25px;
+}
+.btn-red{
+  background-color: #326273;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 6px;
+  color:white;
+}
+.btn-red:hover{
+  background-color: #326273;
+  color: white;
+}
+
+/* Specific CSS rules */
+
+#iprofile{
+  width: 100px;
+  height: 100px;
+  border: 3px solid #cccccc;
+}
+#landscapes{
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+.tamagno{
+  width: 200px;
+}
+
+/* Fixed sidebar layout */
+
+#content{
+  width: 600px;
+  margin: 40px auto;
+}
+
+#sidebar {
+  background-color: #A3A3A3;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 120px;
+  text-align: center;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#sidebar li {
+  margin-top:45px;
+  margin-bottom: 45px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  font-size: 30px;
+  color:#326273;
+}
+
+#sidebar a:hover {
+  color: #326273;
+}
+
+/* Responsive layout behavior */
+
+@media (max-width: 768px) {
+  #content{
+    margin-left: 0px;
+  }
+  #sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
